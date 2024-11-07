@@ -1,20 +1,62 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+  <ion-toolbar color="dark">
+    <ion-title>🏰 Guild Petualang</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="medieval-theme">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+    <ion-toolbar color="dark">
+      <ion-title size="large">🏰 Guild Petualang</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <ion-item (click)="logout()">
+    <ion-icon slot="start" ios="exit-outline" md="exit-sharp"></ion-icon>
+    <ion-label>Logout</ion-label>
+  </ion-item>
+
+  <hr>
+
+  <div class="welcome-container">
+    <h1>Selamat Datang, {{ nama }}</h1>
+    <p>Semoga perjalananmu penuh dengan kejayaan dan kehormatan!</p>
+  </div>
+
+  <div class="options-container">
+    <ion-card class="medieval-option-card" >
+      <ion-card-content>
+        <ion-icon name="map-outline"></ion-icon>
+        <p>Ambil Quest</p>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="medieval-option-card" >
+      <ion-card-content>
+        <ion-icon name="hammer-outline"></ion-icon>
+        <p>Blacksmith</p>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="medieval-option-card" >
+      <ion-card-content>
+        <ion-icon name="people-outline"></ion-icon>
+        <p>Resepsionis</p>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="medieval-option-card" >
+      <ion-card-content>
+        <ion-icon name="wine-outline"></ion-icon>
+        <p>Bar</p>
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card class="medieval-option-card">
+      <ion-card-content>
+        <ion-icon name="bed-outline"></ion-icon>
+        <p>Hotel</p>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>

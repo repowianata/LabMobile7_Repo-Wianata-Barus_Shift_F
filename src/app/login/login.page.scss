@@ -1,0 +1,36 @@
+.medieval-theme {
+    background-image: url('/assets/medieval-background.jpg'); /* Gambar latar belakang bertema Medieval */
+    background-size: cover;
+    color: #d4af37; /* Warna emas untuk teks */
+    font-family: 'MedievalSharp', serif; /* Font yang bergaya Medieval */
+  }
+  
+  .medieval-card {
+    background-color: #f5deb3; /* Warna kertas kuno */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border: 1px solid #8b4513; /* Warna coklat untuk memberikan kesan tepi */
+    margin: 20px;
+    text-align: center;
+    font-family: 'MedievalSharp', serif;
+    color: #4b3621; /* Warna coklat tua untuk teks */
+  }
+  
+  .medieval-card ion-item {
+    --background: transparent;
+    color: #4b3621;
+  }
+  
+  .medieval-card ion-label {
+    color: #4b3621;
+  }
+  
+  .medieval-card ion-input {
+    color: #4b3621;
+  }
+  
+  .medieval-card ion-button {
+    font-weight: bold;
+  }
+  
